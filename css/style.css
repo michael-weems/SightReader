@@ -1,0 +1,291 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
+
+
+.indigo {
+  background-color: #536DFE !important;
+}
+
+
+.blue {
+    background-color: #448AFF !important;
+}
+
+.indigo-text {
+    color: #536DFE !important;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.mid-section {
+	height: 1064px;
+	width: 1064px;
+}
+.main {
+	overflow:hidden;
+}
+
+/***********************
+ * App
+ */
+.app {
+	padding: -10px 50px 300px 50px;
+    height:100%;
+    width:100%;
+}
+.canvas-area {
+    padding-left:150px;
+}
+
+.controls {
+    margin-left:20px;
+    margin-bottom: 50px;
+}
+
+
+/***********************
+ * Text input and Labels
+ */
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color: #e2e2e2;
+  transition: all 0.5s;
+}
+
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.mat-div {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+.mat-div:after, .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2; 
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  background-color: #8E8DBE;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: #8E8DBE;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+input[type='radio'] {
+   -webkit-appearance: none;
+}
+
+
+/***********************
+ * Wall
+ */
+.wall {
+    height:90%;
+    width:100%;
+    margin-top:1%;
+}
+
+
+/***********************
+ * Cards
+ */
+.card-wall-wrapper {
+    width: 28%;
+    height: 30%;
+    float:left; 
+    margin-right:5%;
+    margin-bottom:5%;
+    
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.card-app-wrapper {
+    width: 40%;
+    height: 40%;
+    float:left; 
+    margin-right:5%;
+    margin-bottom:5%;
+}
+
+.card.app-card {
+    height:100%;
+    width:100%;
+    margin-bottom: 5px;
+}
+
+.card.wall-card {
+    position: absolute; 
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+    z-index: 50;
+    transition: width 0.3s, height .5s;
+}
+
+.card.large {
+    z-index: 100;
+    background: #fff;
+    width: 250%;
+    height: 300%;
+    transition: width 0.3s ease 0.2s, height 0.2s ease 0.1s;
+}
+
+.large-image {
+    width:250%;
+    height:300%;
+}
+
+.card.large-profile {
+    z-index: 100;
+    background: #fff;
+    width: 175%;
+    height: 150%;
+    transition: width 0.3s ease 0.2s, height 0.2s ease 0.1s;
+}
+
+.large-image-profile {
+    width:175%;
+    height:150%;
+}
+
+
+.likebutton:hover {
+    cursor:pointer;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.mainbody {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 1%;
+}
+.wallbody {
+    position: absolute; 
+    height:100%; 
+    width:100%;
+    bottom:0px; 
+    top:64px; 
+    margin-top:2%
+}
+
+.profilebody {
+    
+}
+
+nav {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    top:0px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0 0 0;
+}
+
+
+
+.hidden{
+    display:none;
+}
+
+.unhidden{
+    display:block;
+}
+
+.fab {
+    position: fixed;
+    right:7%;
+    bottom:10%;
+}
+
+.create-post{
+    position: fixed;
+    right:16%;
+    bottom:16%;
+    z-index: 50;
+    outline:none;
+    width:1%;
+    height:1%;
+}
+
+.create-post.hidden {
+    box-sizing: border-box;
+    transform-origin: right bottom;
+    transition: width 1s ease 1s, height 1s ease 1s;
+}
+
+.create-post.unhidden {
+    width:50%;
+    height:65%;
+    transform-origin: right bottom;
+    z-index: 150;
+    transition: width 1s ease 1s, height 1s ease 1s;
+}
+
+.hoverhand:hover {
+    cursor: pointer;
+}
